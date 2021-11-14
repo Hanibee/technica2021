@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<title> </title>
+<link href="stylesheet.css" rel="stylesheet">
+<img id="menu" src="menu.png">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#Filter").hide();
+    $("#Edit").hide();
+      $("#ContentPreferences").hide();
+        $("#AccountSettings").hide();
+  $("#filterbutton").click(function(){
+    $("#Filter").show();
+    $("#Edit").hide();
+      $("#ContentPreferences").hide();
+        $("#AccountSettings").hide();
+  });
+
+  $("#editbutton").click(function(){
+    $("#Filter").hide();
+    $("#Edit").show();
+      $("#ContentPreferences").hide();
+        $("#AccountSettings").hide();
+  });
+
+  $("#contentbutton").click(function(){
+    $("#Filter").hide();
+    $("#Edit").hide();
+      $("#ContentPreferences").show();
+        $("#AccountSettings").hide();
+  });
+
+  $("#accountbutton").click(function(){
+    $("#Filter").hide();
+    $("#Edit").hide();
+      $("#ContentPreferences").hide();
+        $("#AccountSettings").show();
+  });
+});
+</script>
+
+</head>
+
+<body>
+
+<img id="profile" src="profile.png">
+
+<h1>@janedoe</h1>
+
+<h2>Instagram Profile</h2>
+
+<button id="Sentinal">Sentinel</button>
+<button class="general" id="filterbutton" style = "left: 111px">Filter</button>
+<button class="general" id="editbutton" style = "left: 333px">Edit</button>
+<button class="general" id="contentbutton" style = "left: 546px">Content Preferences</button>
+<button class="general" id="accountbutton" style = "left: 772px">Account Settings</button>
+
+<div id="Filter"><input type="search" id="query" name="q"
+ placeholder="Search..."
+ aria-label="Search through site content">
+<button id="searchbutton">Search</button>
+</form>
+<form id="form" role="search"></div>
+<div id="Edit"><p>Wellness</p><p>Snowboarding</p><p>Puppies</p><p>Art</p></div>
+<div id="ContentPreferences"><label class="container">
+  <input type="checkbox" notchecked="checked">
+  <span class="checkmark"></span>Location<p>Decide which locations you prefer to see your content from.</p><label class="container">
+    <input type="checkbox" notchecked="checked">
+    <span class="checkmark"></span>Interests<p>Decide what posts to see based on your interest preference.</p><label class="container">
+      <input type="checkbox" notchecked="checked">
+      <span class="checkmark"></span>Display Sensitive Content</div>
+<div id="AccountSettings"><label class="container">
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label><img id="pencil" src="pencil.png">Apply Changes<p>Apply the new preference updates to your account!</p><img id="gear" src="gear.png">Manage Account<p>Manage your Sentinel account settings</p><img id="heart" src="heart.png">Deactivate Account<p>Deactivate your Sentinel Account</p></div>
+
+
+</body>
+
+</html>
